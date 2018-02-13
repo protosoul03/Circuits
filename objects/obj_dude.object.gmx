@@ -51,7 +51,10 @@ spd = 4;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if canMoveForward() = true
+            <string>//if canMoveForward() = true
+//    moveForward()
+    
+if atIntersection() = false and canMoveForward() = true
     moveForward()
 //else
     //pick new direction 

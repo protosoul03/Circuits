@@ -28,6 +28,7 @@
   <scripts name="scripts">
     <script>scripts\canMoveForward.gml</script>
     <script>scripts\moveForward.gml</script>
+    <script>scripts\atIntersection.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_wire</object>
