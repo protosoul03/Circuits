@@ -1,19 +1,27 @@
 //atIntersection()
 // is dude at intersection?
-var count;
 count = 0;
+wires = instance_number(obj_wire);
 
-if position_meeting(x+32,y,obj_wire) = true
-    count++;
-    
-if position_meeting(x-32,y,obj_wire) = true
-    count++
-
-if position_meeting(x,y+32,obj_wire) = true
-    count++;
-    
-if position_meeting(x,y-32,obj_wire) = true
-    count++;
+for (k = 0; k < wires; k++){
+    inst = (instance_find(obj_wire, k))
+    if (collision_point(x+32,y,obj_wire,true,true)=inst)
+    {
+        count ++
+    }
+    if (collision_point(x-32,y,obj_wire,true,true)=inst)
+    {
+        count ++
+    }
+    if (collision_point(x,y+32,obj_wire,true,true)=inst)
+    {
+        count ++
+    }
+    if (collision_point(x,y-32,obj_wire,true,true)=inst)
+    {
+        count ++
+    }
+}
 
 if count >=3
     return(true)
